@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="regression"></include>
+		</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="testNGScripts.GroupExecution01TestScript">
+      <methods>
+		  <include name="addMoney"></include>
+		  <include name="withDrawal"></include>
+	  </methods>
+      </class>
+      <class name="testNGScripts.GroupExecution02TestScript"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
